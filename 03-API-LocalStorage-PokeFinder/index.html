@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeFinder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>PokeFinder</h1>
+        <p>Search & Save your favorites</p>
+      </header>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="pokeInput"
+          placeholder="Pokemon name (e.g. Pikachu)"
+        />
+        <button id="searchBtn">🔍 Search</button>
+      </div>
+
+      <div id="pokeCard" class="card-container">
+        <p class="empty-msg">Ready to search...</p>
+      </div>
+
+      <button id="addBtn" class="action-btn add-btn" style="display: none">
+        Add to Favorites
+      </button>
+
+      <hr />
+
+      <div class="favorites-header">
+        <h3>My Favorites</h3>
+        <button id="clearAllBtn" class="clear-btn" style="display: none">
+          Clear All
+        </button>
+      </div>
+
+      <ul id="favList" class="fav-grid"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
